@@ -4,7 +4,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 from langchain_groq import ChatGroq
-from dotenv import load_dotenv
 
 import dash
 from dash import dcc, html, Input, Output, State, callback
@@ -369,3 +368,4 @@ def rezept_erstellen(n_clicks, n_submit, gericht):
 
 # ── Start ─────────────────────────────────────────────────────────────────────
 server = app.server
+
