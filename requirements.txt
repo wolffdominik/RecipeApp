@@ -1,6 +1,5 @@
-langchain_core.prompts
-langchain_core.output_parsers
+langchain
 pydantic
-langchain_groq
+langchain-groq
 dash
-dash_bootstrap_components
+dash-bootstrap-components
