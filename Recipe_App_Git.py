@@ -1,4 +1,5 @@
 # %% Pakete
+import os
 import re
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
@@ -9,7 +10,7 @@ import dash
 from dash import dcc, html, Input, Output, State, callback
 import dash_bootstrap_components as dbc
 
-
+os.environ.get('MY_API_KEY')
 # ── Supermarkt-Abteilungen in typischer Laufreihenfolge ──────────────────────
 SUPERMARKT_REIHENFOLGE = [
     "Obst & Gemüse",
@@ -368,4 +369,5 @@ def rezept_erstellen(n_clicks, n_submit, gericht):
 
 # ── Start ─────────────────────────────────────────────────────────────────────
 server = app.server
+
 
