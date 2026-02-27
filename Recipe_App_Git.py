@@ -368,5 +368,4 @@ def rezept_erstellen(n_clicks, n_submit, gericht):
 
 
 # ── Start ─────────────────────────────────────────────────────────────────────
-if __name__ == "__main__":
-    app.run(debug=True, port=8050)
+server = app.server
